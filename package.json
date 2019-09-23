@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc src/index.ts --outDir docs/ -w"
+    "build": "tsc src/index.ts --outDir docs",
+    "watch": "tsc src/index.ts --outDir docs -w"
   },
   "keywords": [],
   "author": "",
