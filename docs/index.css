@@ -26,8 +26,11 @@ body {
   outline: none;
 }
 
-.markdown {
-  margin: 24px;
+#output {
+  margin: 12px;
+  padding: 48px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
   color: #424242;
 }
 
