@@ -21,6 +21,7 @@
 ---
 
 [Google](https://www.google.com)
+[Google][link]
 
 - リスト
   - リスト
@@ -44,18 +45,31 @@ pre は翻訳対象なので！！！
 
 npm の更新には `npm install npm` を使用
 
-*イタリック*
-
 **太字**
+
+*イタリック*
 
 -打ち消し-
 
+**-太字打ち消し-**
+***太字イタリック***
+
+*-イタリック打ち消し-*
+
+-*打ち消しイタリック*-
+-**打ち消し太字**-
+
 注釈[^comment]
 
-Header 1|Header 2|Header 3
-:-:|:-:|:-:
-content|content|content
+| Header 1 | Header 2 | Header 3 |
+| :------- | :------: | -------: |
+| Left     |  Center  |    Right |
 
+Header 1|Header 2|Header 3
+:-|:-:|-:
+Left|Center|Right
+
+[link]: https://www.google.com
 [^comment]: 注釈内容
       </textarea>
     </section>
