@@ -4,8 +4,6 @@
     "module": "es2015",
 
     "strict": true,
-    "esModuleInterop": true,
-
-    "outDir": "docs"
+    "esModuleInterop": true
   }
 }
