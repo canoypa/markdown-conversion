@@ -1,15 +1,18 @@
+const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
+
 const conversion = (text: string): DocumentFragment => {
   const result: DocumentFragment = document.createDocumentFragment();
   const lineArray: string[] = text.split(/\n/);
 
   lineArray.forEach((line: string) => {
-    if (/^# (.+)/.test(line)) {
-      const h1Match = <RegExpExecArray>/^# (.+)/.exec(line);
+    if (RegExpHeading.test(line)) {
+      const match = <RegExpExecArray>RegExpHeading.exec(line);
+      const stage: number = match[1].length;
 
-      const h1 = document.createElement('h1');
-      h1.classList.add('markdown-h1');
-      h1.textContent = h1Match[1];
-      result.appendChild(h1);
+      const heading = document.createElement(`h${stage}`);
+      heading.classList.add(`markdown-h${stage}`);
+      heading.textContent = match[2];
+      result.appendChild(heading);
     } else {
       const div = document.createElement('div');
       div.textContent = line;
