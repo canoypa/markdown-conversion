@@ -2,15 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Markdown Conversion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <script type="module" defer src="index.js"></script>
   </head>
   <body>
     <section class="section">
-      <h1 class="header">Textarea</h1>
-      <textarea id="textarea"></textarea>
+      <h1 class="header">Input</h1>
+      <textarea id="textarea">
+# 見出し
+## 見出し
+### 見出し
+#### 見出し
+##### 見出し
+###### 見出し
+
+- リスト
+  - リスト
+    - リスト
+
+> 引用
+>> 引用
+
+~~~
+preだと翻訳対象なのでコードはちゃんと code タグに入れてください
+~~~
+
+npm の更新には `npm install npm` を使用
+
+*イタリック*
+
+**太字**
+    
+---
+
+~打ち消し~
+
+Header 1|Header 2|Header 3
+:-:|:-:|:-:
+content|content|content
+      </textarea>
     </section>
     <section class="section">
       <h1 class="header">Output</h1>
