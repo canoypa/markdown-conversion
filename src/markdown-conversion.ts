@@ -14,7 +14,7 @@ const conversion = (text: string): DocumentFragment => {
       const stage: number = match[1].length;
 
       const heading = document.createElement(`h${stage}`);
-      heading.id = match[2];
+      heading.id = `m-${match[2]}`;
       heading.classList.add(`markdown-h${stage}`);
       heading.textContent = match[2];
       result.appendChild(heading);
