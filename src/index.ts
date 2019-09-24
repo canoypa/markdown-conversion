@@ -1,7 +1,8 @@
 import { conversion, _Conversion } from './markdown-conversion';
 
 const textareaChange = (): void => {
-  const r = conversion(textarea.value);
+  const r = _conv.change(textarea.value);
+
   while (output.firstChild) {
     output.removeChild(output.firstChild);
   }
