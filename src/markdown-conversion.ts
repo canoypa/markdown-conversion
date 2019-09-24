@@ -14,9 +14,10 @@ const conversion = (text: string): DocumentFragment => {
       heading.textContent = match[2];
       result.appendChild(heading);
     } else {
-      const div = document.createElement('div');
-      div.textContent = line;
-      result.appendChild(div);
+      const p = document.createElement('p');
+      p.classList.add('markdown-body-text');
+      p.textContent = line;
+      result.appendChild(p);
     }
   });
 
