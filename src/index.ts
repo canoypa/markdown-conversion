@@ -1,4 +1,4 @@
-import { conversion, _conversion } from './markdown-conversion';
+import { conversion, _Conversion } from './markdown-conversion';
 
 const textareaChange = (): void => {
   const r = conversion(textarea.value);
@@ -10,7 +10,7 @@ const textareaChange = (): void => {
 
 const textarea: HTMLTextAreaElement = <HTMLTextAreaElement>document.getElementById('textarea');
 const output: HTMLOutputElement = <HTMLOutputElement>document.getElementById('output');
-const _conv: _conversion = new _conversion();
+const _conv: _Conversion = new _Conversion();
 
 textarea.addEventListener('input', textareaChange);
 
