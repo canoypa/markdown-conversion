@@ -1,6 +1,6 @@
 const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
 
-class _Conversion {
+class Conversion {
   constructor() {}
   change(text: string): DocumentFragment {
     const result: DocumentFragment = document.createDocumentFragment();
@@ -28,4 +28,4 @@ class _Conversion {
   }
 }
 
-export { _Conversion };
+export { Conversion };
