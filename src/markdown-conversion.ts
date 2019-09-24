@@ -1,8 +1,8 @@
 const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
 
-class _conversion {
-  constructor() {}
-}
+// class _conversion {
+//   constructor() {}
+// }
 
 const conversion = (text: string): DocumentFragment => {
   const result: DocumentFragment = document.createDocumentFragment();
