@@ -35,6 +35,10 @@ body {
   color: #424242;
 }
 
+.markdown-body-text {
+  margin: 0 0 1em 0;
+}
+
 .markdown-h1,
 .markdown-h2,
 .markdown-h3,
