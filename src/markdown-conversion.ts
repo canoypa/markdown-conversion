@@ -1,5 +1,9 @@
 const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
 
+class _conversion {
+  constructor() {}
+}
+
 const conversion = (text: string): DocumentFragment => {
   const result: DocumentFragment = document.createDocumentFragment();
   const lineArray: string[] = text.split(/\n/);
