@@ -72,22 +72,22 @@ body {
 }
 
 .markdown-h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 .markdown-h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 .markdown-h3 {
-    font-size: 2em;
+  font-size: 2em;
 }
 .markdown-h4 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 .markdown-h5 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .markdown-h6 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .markdown-ul {
@@ -104,9 +104,8 @@ body {
 }
 
 .markdown-pre {
-  display: inline-block;
-  margin: 2px 0;
-  padding: 12px;
+  display: block;
+  padding: 1em;
   border-radius: 4px;
   background-color: #f5f5f5;
 }
