@@ -26,6 +26,8 @@ class Conversion {
 
     return result;
   }
+
+  register(regexp: RegExp, callback: Function) {}
 }
 
 export { Conversion };
