@@ -2,6 +2,7 @@ const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
 
 class Conversion {
   constructor() {}
+
   change(text: string): DocumentFragment {
     const result: DocumentFragment = document.createDocumentFragment();
     const lineArray: string[] = text.split(/\n/);
