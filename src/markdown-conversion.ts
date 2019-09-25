@@ -1,6 +1,8 @@
 const RegExpHeading: RegExp = new RegExp(/^(#+) (.+)/);
 
 class Conversion {
+  private process: Array<{ regexp: RegExp; callback: Function }> = [];
+
   constructor() {}
 
   change(text: string): DocumentFragment {
@@ -28,7 +30,9 @@ class Conversion {
     return result;
   }
 
-  register(regexp: RegExp, callback: Function) {}
+  register(regexp: RegExp, callback: Function) {
+    this.process.push({ regexp, callback });
+  }
 }
 
 export { Conversion };
