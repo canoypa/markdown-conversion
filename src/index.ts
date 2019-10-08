@@ -1,4 +1,4 @@
-import { Conversion } from './markdown-conversion';
+import Conversion from './markdown-conversion';
 
 const textareaChange = (): void => {
   const r = conversion.change(textarea.value);
