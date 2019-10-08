@@ -26,4 +26,4 @@ class Conversion {
   }
 }
 
-export { Conversion };
+export default Conversion;
