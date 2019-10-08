@@ -49,21 +49,18 @@ body {
   margin: 0 0 24px 0;
   line-height: 1.5em;
 }
-.markdown-h1:hover::after,
-.markdown-h2:hover::after,
-.markdown-h3:hover::after,
-.markdown-h4:hover::after,
-.markdown-h5:hover::after,
-.markdown-h6:hover::after {
-  content: '';
-  position: absolute;
-  top: 0.5em;
-  left: -28px;
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24"><path fill="%23616161" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" /></svg>')
-    no-repeat center center;
+
+.markdown-anchor {
+  visibility: hidden;
+  vertical-align: middle;
+}
+.markdown-h1:hover .markdown-anchor,
+.markdown-h2:hover .markdown-anchor,
+.markdown-h3:hover .markdown-anchor,
+.markdown-h4:hover .markdown-anchor,
+.markdown-h5:hover .markdown-anchor,
+.markdown-h6:hover .markdown-anchor {
+  visibility: visible;
 }
 
 .markdown-h1,
