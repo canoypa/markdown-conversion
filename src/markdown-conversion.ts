@@ -12,8 +12,9 @@ class Conversion {
 
         let exec: RegExpExecArray | null = null;
         while ((exec = process.regexp.exec(text))) {
-          console.log(exec);
-          result.appendChild(process.callback(exec));
+          const tmp = document.createElement("div");
+          tmp.innerHTML = process.callback(exec);
+          result.appendChild(tmp.firstChild as HTMLElement);
         }
       }
     });
