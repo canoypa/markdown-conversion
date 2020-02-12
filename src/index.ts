@@ -13,12 +13,11 @@ const textarea: HTMLTextAreaElement = <HTMLTextAreaElement>document.getElementBy
 const output: HTMLOutputElement = <HTMLOutputElement>document.getElementById("output");
 const conversion: Conversion = new Conversion();
 
-conversion.register(/^(?<stage>#{1,6})\s(?<body>.+)$/gm, (exec: RegExpExecArray) => {
+conversion.register(/^(#{1,6})\s(.+)$/gm, (exec: RegExpExecArray) => {
   console.log(exec);
 
-  const groups = exec.groups as { [key: string]: string };
   const stage: number = exec[1].length;
-  return `<h${stage} id="m-${groups.body}" class="markdown-h${stage}">${groups.body}</h${stage}>`;
+  return `<h${stage} id="m-${exec[2]}" class="markdown-h${stage}">${exec[2]}</h${stage}>`;
 });
 
 textarea.addEventListener("input", textareaChange);
