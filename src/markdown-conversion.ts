@@ -1,5 +1,7 @@
+type CallBackFunction = (exec: RegExpExecArray) => string;
+
 class Conversion {
-  private process: Array<{ regexp: RegExp; callback: Function }> = [];
+  private process: Array<{ regexp: RegExp; callback: CallBackFunction }> = [];
 
   constructor() {}
 
@@ -22,7 +24,7 @@ class Conversion {
     return result;
   }
 
-  register(regexp: RegExp, callback: Function) {
+  register(regexp: RegExp, callback: CallBackFunction) {
     this.process.push({ regexp, callback });
   }
 }
